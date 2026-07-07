@@ -281,4 +281,19 @@ document.addEventListener("keydown", (e) => {
        display.textContent = num1 + operatorSelected + num2;
     }
     }
+    if (e.key === ".") {
+         if (operatorSelected === undefined) {
+        num1 = num1 + decimalButton.textContent;
+        display.textContent = num1;
+        if (num1.includes(".")) {
+            decimalButton.disabled = true;
+        }
+    } else if (operatorSelected) {
+        num2 = num2 + decimalButton.textContent;
+        display.textContent = num1 + operatorSelected + num2;
+        if (num2.includes(".")) {
+            decimalButton.disabled = true;
+        }
+    }
+    }
 })
