@@ -31,3 +31,6 @@ This is an interactive, browser-based calculator application created with HTML, 
 - Iterative debugging and bug tracking
 
 # Screenshot
+
+![Screenshot](Screenshot1.png)
+![Screenshot](Screenshot2.png)
